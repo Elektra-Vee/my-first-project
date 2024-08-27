@@ -3,18 +3,24 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Or the branch you use for deployment
+      - main  # Replace with your branch name
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: Checkout code
       uses: actions/checkout@v3
+
+    - name: Build project
+      run: |
+        # Add your build commands here if necessary
+        echo "Build step (if required)"
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./  # Adjust if your build output is in a different directory
+        publish_dir: ./  # Adjust this path if your files are in a different directory
+
