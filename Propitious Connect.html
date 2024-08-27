@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AfriDigit Solutions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #008080(0,0,0);
+  background-color: #008080(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: Center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #FFE6D5;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #008080;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 12;
+  padding: 12;
+  overflow: hidden;
+  background-color: #FF6600;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #D45500;
+}
+i {
+  display: block;
+  align-content: center;
+  float: left;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+h1 {
+  color: #2B1100;
+  text-shadow: 2px 2px 5px #D45500;
+}
+
+.form {
+    width: 250px;
+    height: 200px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5,)rgba(0,0,0,0.5)50%);
+    position: absolute;
+    top: 150px;
+   right: 16px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2 {
+        width: 220px;
+        font-family: sans-serif;
+        text-align: center;
+        color: #552200;
+        font-size: 22px;
+        background-color: #008080;
+        border-radius: 10px;
+        margin: 2px;
+        padding: 8px;
+}
+
+.form input {
+        width: 240px;
+        height: 35px;
+        background: transparent;
+        border-bottom: 1px solid #008080;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color: white;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        font-family: sans-serif;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: white;
+}
+
+.btnn {
+    width: 240px;
+    height: 40px;
+    background: #008080;
+    border: none;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #000;
+    transition: 0.6s ease;
+}
+
+    .btnn:hover {
+        background: white;
+        color: #FFB380;
+    }
+
+    .btnn a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+    }
+
+.form .link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+.form .link {
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+}
+
+.liw {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+        opacity: 0.7;
+    }
+
+.fa-facebook {
+    background: #2064f7;
+    color: white;
+}
+
+</style>
+</head>
+<body>
+<h1>AfriDigit Solutions</h1>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Course Training</a>
+    <a href="#">Achievement</a>
+    <a href="#">Internship</a>
+    <a href="#">Junior Positions</a>
+    
+  </div>
+</div>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#services">Services</a></li>
+  <li><a href="#contents (CDNs)">Content delivery networks (CDNs)</a></li>
+  <li><a href="#blog">Blog</a></li>
+  <li><a href="#jobs">Jobs</a></li>
+  <b><li style="float:right; "font-size:30px;cursor:pointer onclick="openNav()"><a href="#menu">&#9776; Menu</a></li></b>
+
+</ul>
+
+
+<div class="form">
+    <form action="/index.php" method="POST"></form>
+    <h2>Login Here</h2>
+    <input type="Email" name=" Email" placeholder="Enter Email ">
+    <input type="password" name="Password" placeholder="Enter Password">
+    <button class="btnn" type="submit">Sign In</button>
+    <p class="link">
+        Don't have an account?<br>
+        <a href="signup.html">Sign up</a>
+        
+        
+    
+    </p>
+    <p class="liw">Log in with</p>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Add font awesome icons -->
+    <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://www.whatsapp.com/" target="_blank" class="fa fa-whatsapp"></a>
+    <a href="https://www.twitter.com/" target="_blank" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+</div>
+
+<title>Font Awesome Icons</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<i class="fa fa phone" style="font-size:24px;color:black",position:left></i> 
+<a href="tel:+27 83 947 65">+27 83 947 6565</a>
+<br> 
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+
+}
+
+</script>
+<h2>Every Moment is Auspicious with us!</h2>
+<p><b>This platform is for Professionals seeking career advancement,<br> Graduates looking to kickstart their careers,</b>
+<br> <i>or hobbyists interested in learning new skills</i></p>
+<style>
+    body {
+      background-image: url('image');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+      
+    }
+    </style>
+    </head>
+</body>
+</html>
